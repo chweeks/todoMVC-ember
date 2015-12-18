@@ -1,34 +1,11 @@
-Todos.Router.map(function() {
-  this.resource('todos', { path: '/' }, function() {
-    this.route("active");
-    this.route("completed");
+Pokedex.Router.map(function() {
+  this.resource('pokedex', { path: '/' }, function() {
   });
 });
 
-Todos.TodosRoute = Ember.Route.extend({
+Pokedex.PokedexRoute = Ember.Route.extend({
   model: function() {
-    return this.store.find('todo');
+    var picture = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+Pokedex.Item.all().pkdx_id+".png"
+    return Pokedex.Item.all();
   }
 });
-
-Todos.TodosActiveRoute = Ember.Route.extend({
-  model: function() {
-    return this.store.filter('todo', function(todo) {
-      return !todo.get("isCompleted")
-    });
-  },
-  renderTemplate: function(controller) {
-    this.render("todos/index", {controller});
-  }
-});
-
-Todos.TodosCompletedRoute = Ember.Route.extend({
-  model: function() {
-    return this.store.filter('todo', function(todo) {
-      return todo.get("isCompleted")
-    });
-  },
-  renderTemplate: function(controller) {
-    this.render("todos/index", {controller});
-  }
-})
