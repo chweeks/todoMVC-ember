@@ -1,4 +1,4 @@
-<!doctype html>
+<doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -19,32 +19,159 @@
 
     <script type="text/x-handlebars" data-template-name="pokedex">
       {{outlet}}
-      <div class="col-md-6 col-md-offset-3" id="fullHeight">
-        <h1>Pokemon</h1>
+      <div class="col-md-8 col-md-offset-2" id="fullHeight">
+        <h1>POKÉDEX</h1>
+        <div class="row">
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png>
+          </div>
 
-        <ul id="pokemon-list">
-          <li>{{model.pkdx_id}}</li>
-          <li>{{model.name}}</li>
-          {{#each type in model.types}}
-            <li>{{type.name}}!</li>
-          {{/each}}
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png>
-          <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png>
-        </ul>
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png>
+          </div>
+
+          <div class="col-md-3">
+            {{model.pkdx_id}}
+            {{model.name}}
+            {{#each type in model.types}}
+              {{type.name}}
+            {{/each}}
+            <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png>
+          </div>
+        </div>
       </div>
     </script>
 
