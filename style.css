@@ -16,6 +16,6 @@ body{
 
 #fullHeight{
   background-color: white;
-  height: 100%;
+  min-height: 100%;
   color: black;
 }
