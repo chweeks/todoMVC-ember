@@ -23,9 +23,9 @@
         <h1>POKÉDEX</h1>
         <div class="row">
           <div class="col-md-3">
-            {{model.pkdx_id}}
-            {{model.name}}
-            {{#each type in model.types}}
+            #00{{model.bulbasaur.pkdx_id}}
+            {{model.bulbasaur.name}}
+            {{#each type in model.bulbasaur.types}}
               {{type.name}}
             {{/each}}
             <img src=https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png>

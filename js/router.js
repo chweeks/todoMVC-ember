@@ -5,6 +5,8 @@ Pokedex.Router.map(function() {
 
 Pokedex.PokedexRoute = Ember.Route.extend({
   model: function() {
-    return Pokedex.Item.all()
+    return Ember.RSVP.hash({
+      bulbasaur: Pokedex.Item.all()
+    });
   }
 });
