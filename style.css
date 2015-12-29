@@ -98,3 +98,21 @@ body{
   display: block;
   margin: 0 auto;
 }
+
+.load{
+  font-size: 15px;
+  margin-top: 82px;
+  margin-bottom: 60px;
+  background-color: #4A90E2;
+  border-radius: 5px;
+  text-align: center;
+  height:50px;
+  width: 216px;
+  align-items: center;
+}
+
+.buttonCentre{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
