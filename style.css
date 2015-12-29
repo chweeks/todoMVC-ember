@@ -19,3 +19,35 @@ body{
   min-height: 100%;
   color: black;
 }
+
+#centre{
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+
+.pokeSquare{
+  height: 238px;
+  width: 216px;
+  margin-top: 60px;
+  background-color: #F2F1F1;
+  border-radius: 10px;
+}
+
+.type{
+  background-color: #A0DA5E;
+  width: 108px;
+  height: 22px;
+  float: left;
+  text-align: center;
+}
+
+.typeContainer{
+  width: 100%;
+  overflow: hidden;
+}
+
+.image{
+  display: block;
+  margin: 0 auto;
+}
