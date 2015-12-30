@@ -14,16 +14,21 @@ body{
   color: white;
 }
 
-#fullHeight{
-  background-color: white;
-  min-height: 100%;
-  color: black;
-}
-
 #centre{
   height: 5em;
   display: flex;
   align-items: center;
+}
+
+.whiteBack{
+  background-color: white;
+  min-height: 100%;
+  color: black;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .pokeSquare{
@@ -108,7 +113,8 @@ body{
   text-align: center;
   height:50px;
   width: 216px;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buttonCentre{
