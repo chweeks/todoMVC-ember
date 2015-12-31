@@ -4,10 +4,19 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+  padding-top: 54px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #header{
   background-color: #1f2532;
+  margin-bottom: 0px;
 }
 
 #white{
@@ -18,6 +27,14 @@ body{
   height: 5em;
   display: flex;
   align-items: center;
+}
+
+.typeRight{
+  border-radius: 10px 0px 10px 0px;
+}
+
+.typeLeft{
+  border-radius: 0px 10px 0px 10px;
 }
 
 .whiteBack{
@@ -102,6 +119,7 @@ body{
 .image{
   display: block;
   margin: 0 auto;
+  height: 195px;
 }
 
 .load{

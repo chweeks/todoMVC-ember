@@ -5,22 +5,23 @@
     <title>Ember.js • Pokedex</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav class="navbar navbar-default" id="header">
-      <div class="container-fluid">
-        <div class="col-md-8 col-md-offset-2" id="centre">
-          <div class="navbar-header">
-            <img src="public/pokeball.png"><strong id="white">POKÉDEX</strong>
-          </div>
-        </div>
-      </div>
-    </nav>
-
     <script type="text/x-handlebars" data-template-name="pokedex">
       {{outlet}}
+      <nav class="navbar navbar-default" id="header">
+        <div class="container-fluid">
+          <div class="col-md-8 col-md-offset-2" id="centre">
+            <div class="navbar-header">
+              <img src="public/pokeball.png"><strong id="white">POKÉDEX</strong>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div class="whiteBack">
-        <h1>POKÉDEX</h1>
+        <h1 class="title">POKÉDEX</h1>
         <div class="row">
           <div class="col-md-3">
             <div class="pokeSquare">
@@ -43,7 +44,7 @@
               {{model.ivysaur.name}}
               <img class="image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png">
               <div class="typeContainer">
-                {{#each type in model.bulbasaur.types}}
+                {{#each type in model.ivysaur.types}}
                   <div {{bind-attr class="type.name"}}>
                     {{type.name}}
                   </div>
