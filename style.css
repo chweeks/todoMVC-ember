@@ -17,9 +17,7 @@ body{
 #header{
   background-color: #1f2532;
   margin-bottom: 0px;
-}
-
-#white{
+  height: 50px;
   color: white;
 }
 
